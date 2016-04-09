@@ -8,7 +8,7 @@ import java.util.TimerTask
 import javax.sound.sampled._
 
 object Main extends App {
-  val SECONDS = 5L
+  val SECONDS = 5 * 60
   val INPUT_INDEX = 0
   val SOUND = new BufferedInputStream(getClass.getResourceAsStream("/sample14.wav"))
   val ais = AudioSystem.getAudioInputStream(SOUND)
